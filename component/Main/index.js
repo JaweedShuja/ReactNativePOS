@@ -4,6 +4,7 @@ import Header from './header.js'
 import Categories from './categories.js'
 import Buttons from './buttons.js'
 import Items from './items.js'
+import Invoice from './invoice.js'
  
 class index extends Component {
    render() {
@@ -15,12 +16,12 @@ class index extends Component {
                         <Categories/>
                     </View>
                     <View style={{flex:2}}>
-                        <View style={{flex:2}}>
+                        <View style={{flex:4}}>
                             <Items />
                         </View>
-                        <View style={{flex:1}}>
-
-                        </View>
+                        <View style={{flex:3}}>
+                            <Invoice/>
+                        </View> 
 
                     </View>
                </View>

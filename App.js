@@ -3,12 +3,13 @@ import {View, Text} from 'react-native'
 import FirstPage from './component/firstpage'
 import SecondPage from './component/secondpage.js'
 import Main from './component/Main'
+import Dashboard from './component/Dashboard'
 
 export default class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      currentPage:'Main'
+      currentPage:'Dashboard'
     }
 
     this.changePage =this.changePage.bind(this)
@@ -29,7 +30,10 @@ export default class App extends Component{
         break;
       case 'Main':
           return <Main goto={this.changePage}/>
-      break;     
+      break;
+      case 'Dashboard':
+            return <Dashboard goto={this.changePage}/>
+      break;           
     }
     
   }

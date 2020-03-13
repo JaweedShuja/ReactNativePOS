@@ -7,7 +7,7 @@ class Category extends Component {
     }
    render() {
        return (
-           <View style={styles.container}>
+           <View>
                <Text>{this.props.name}</Text>
            </View>  
         )
@@ -16,11 +16,3 @@ class Category extends Component {
 
 export default Category
 
-const styles = StyleSheet.create({
-    container:{
-        height:50,
-        align:'create',
-        justifyContent:'create'
-
-    }
-})
