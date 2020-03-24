@@ -5,12 +5,13 @@ import SecondPage from './component/secondpage.js'
 import Main from './component/Main'
 import Dashboard from './component/Dashboard'
 import AddCategory from './component/AddCategory'
+import AddProduct from './component/AddProduct'
 
 export default class App extends Component{
   constructor(props){
     super(props)
     this.state = {
-      currentPage:'AddCategory'
+      currentPage:'Main'
     }
 
     this.changePage =this.changePage.bind(this)
@@ -37,7 +38,10 @@ export default class App extends Component{
       break;
       case 'AddCategory':
             return <AddCategory goto={this.changePage}/>
-      break;                  
+      break;
+      case 'AddProduct':
+          return <AddProduct goto={this.changePage}/>
+      break;                      
     }
     
   }

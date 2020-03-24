@@ -7,6 +7,7 @@ class Header extends Component {
            <View style={styles.container}>
                <Image style={styles.image} source={require('../../images/posicon.png')}/>
                <Text style={styles.font}>Mini POS</Text>
+               <Text style={styles.headerText}>{this.props.headerText}</Text>
            </View>
         )
     }
@@ -25,6 +26,13 @@ const styles = StyleSheet.create({
         fontSize:20,
         fontWeight:'bold',
         marginLeft:5,
+    },
+    headerText:{
+        fontSize:16,
+        fontWeight:'bold',
+        marginLeft:5,  
+        color:'red',
+        marginLeft:30
     },
     image:{
         height:35,

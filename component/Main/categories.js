@@ -28,13 +28,13 @@ class Categories extends Component {
    render() {
        return (
            <View>
-               <ScrollView>
-                {
-                    this.state.categories.map((data) => 
-                    <View>
+               {/* <ScrollView> */}
+                {/* {
+                    this.state.categories.map((data) =>  */}
+                    {/* <View> */}
                     <View style={{height:50, backgroundColor:"lightblue", alignItems:'center', justifyContent:'center'}}>
-                        <Text> 
-                        {data.name}
+                        <Text > 
+                        {this.props.categoryName}
                         </Text>
                         
                     </View>
@@ -42,11 +42,10 @@ class Categories extends Component {
                             
                     </View>
                     
-                    </View>
-                    )
-                }
-                {/* <Category name="javed"/> */}
-                </ScrollView>
+                    {/* </View> */}
+                {/* //     )
+                // } */}
+                {/* </ScrollView> */}
            </View>
         )
     }
